@@ -15,17 +15,22 @@ sensors:
     unit: "V"
     icon: mdi:power-plug
     state_topic: homeassistant/sensor/tf03k/state
-    value_template: "{{ value_json.decivolt / 100.0 }}"
+    value_template: "{{ (value_json.decivolt / 100.0) | round(1) }}"
   - name: Battery_capacity
     unit: "Ah"
     icon: mdi:current-dc
     state_topic: homeassistant/sensor/tf03k/state
-    value_template: "{{ value_json.capamah / 1000.0 }}"
+    value_template: "{{ (value_json.capamah / 1000.0) | round(1) }}"
   - name: Battery_current
     unit: "A"
     icon: mdi:current-dc
     state_topic: homeassistant/sensor/tf03k/state
-    value_template: "{{ value_json.currentma / 1000.0 }}"
+    value_template: "{{ (value_json.currentma / 1000.0) | round(1) }}"
+  - name: Battery_power
+    unit: "W"
+    icon: mdi:current-dc
+    state_topic: homeassistant/sensor/tf03k/state
+    value_template: "{{ (value_json.currentma * value_json.decivolt / 100000.0) | round(0) }}"
   - name: Battery_sec
     unit: "S"
     icon: mdi:timer
