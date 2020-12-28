@@ -1,0 +1,33 @@
+name: tf03k
+manufacturer: Baiway
+model: tf03k
+mqtt_server: tcp://192.168.5.180:1883
+serial_port: /dev/ttyUSB0
+topic: homeassistant/sensor/tf03k/state
+
+sensors:
+  - name: Battery_soc
+    unit: "%"
+    icon: mdi:battery
+    state_topic: homeassistant/sensor/tf03k/state
+    value_template: "{{ value_json.soc }}"
+  - name: Battery_voltage
+    unit: "V"
+    icon: mdi:power-plug
+    state_topic: homeassistant/sensor/tf03k/state
+    value_template: "{{ value_json.decivolt / 100.0 }}"
+  - name: Battery_capacity
+    unit: "Ah"
+    icon: mdi:current-dc
+    state_topic: homeassistant/sensor/tf03k/state
+    value_template: "{{ value_json.capamah / 1000.0 }}"
+  - name: Battery_current
+    unit: "A"
+    icon: mdi:current-dc
+    state_topic: homeassistant/sensor/tf03k/state
+    value_template: "{{ value_json.currentma / 1000.0 }}"
+  - name: Battery_sec
+    unit: "S"
+    icon: mdi:timer
+    state_topic: homeassistant/sensor/tf03k/state
+    value_template: "{{ value_json.remainsec }}"
