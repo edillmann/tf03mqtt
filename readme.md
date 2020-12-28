@@ -44,6 +44,7 @@ make clean docker run
 
 * handle MQTT user / password
 * enhance documentation
+* add lovelace card template
 
 ## Authors
 
