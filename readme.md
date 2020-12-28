@@ -7,6 +7,16 @@ to home assistant
 
 ## Getting Started
 
+### Have a tk03k coulomb meter
+
+You can find one on aliexpress : https://fr.aliexpress.com/item/32883704077.html
+
+Have a usb to serial ttl : https://fr.aliexpress.com/item/32964764260.html
+
+# Wiring
+
+See ![TF03K communication specifications.pdf](docs/TF03K%20communication%20specification.pdf)
+
 ### Prerequisites
 
 This software was written with docker in mind, the software itself
