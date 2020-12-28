@@ -1,4 +1,4 @@
-module gitlab.jave.fr/tf03kmon
+module github.com/edillmann/tf03kmon
 
 go 1.15
 
