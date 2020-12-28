@@ -36,6 +36,10 @@ serial_port: /dev/ttyUSB0
 make clean docker run
 ```
 
+### HA Intégration
+
+![](images/ha_integration.png)
+
 ## Debugging
 
 ... to be written
