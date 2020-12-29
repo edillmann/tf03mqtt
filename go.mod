@@ -1,4 +1,4 @@
-module github.com/edillmann/tf03kmon
+module github.com/edillmann/tf03mqtt
 
 go 1.15
 
