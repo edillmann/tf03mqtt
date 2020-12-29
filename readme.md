@@ -50,6 +50,14 @@ make clean docker run
 
 ![](images/ha_integration.png)
 
+## Tested platforms
+
+* docker 19.03.8
+* Raspberry PI 2+
+* Raspberry PI 4
+* Rockpi 4
+* Synology X86 based
+
 ## Debugging
 
 ... to be written
