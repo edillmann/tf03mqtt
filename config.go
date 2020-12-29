@@ -20,6 +20,7 @@ type config struct {
 	MqttServer   string   `yaml:"mqtt_server"`
 	SerialPort   string   `yaml:"serial_port"`
 	Topic        string   `yaml:"topic"`
+	HaRegister   bool     `yaml:"ha_register"`
 	Sensors      []sensor `yaml:"sensors"`
 }
 

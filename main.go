@@ -47,7 +47,9 @@ func main() {
 		port: cfg.SerialPort,
 	}
 	// register sensors to Home Assistant
-	cm.register(c)
+	if cfg.HaRegister {
+		cm.register(c)
+	}
 
 	// init serial port
 	err = cm.init()
