@@ -1,7 +1,7 @@
-# TF03K serial to Home Assistant 
+# TF03K serial to MQTT
 
 This projet aim's to export TF03K coulomb meter information
-to home assistant
+to MQTT and home assistant
 
 ![](images/tf03k.png)
 
