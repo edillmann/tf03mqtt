@@ -58,6 +58,13 @@ make clean docker run
 * Rockpi 4
 * Synology X86 based
 
+## MQTT message
+
+This is an example of the json message sent to MQTT:
+```
+{"soc":10,"decivolt":5101,"capamah":20118,"currentma":-1397,"remainsec":52030}
+```
+
 ## Debugging
 
 ... to be written
