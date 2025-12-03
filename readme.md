@@ -1,3 +1,5 @@
+# Project archived as of 12/2025 see https://github.com/edillmann/esphome-tf03k-smart-shunt as an esp32 based replacement
+
 # TF03K serial to MQTT
 
 This projet aim's to export TF03K coulomb meter information
